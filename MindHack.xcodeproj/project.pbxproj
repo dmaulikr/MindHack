@@ -13,6 +13,7 @@
 		A27959F71E2B1CDC003CD981 /* MindHack.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A27959F51E2B1CDC003CD981 /* MindHack.xcdatamodeld */; };
 		A27959F91E2B1CDC003CD981 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A27959F81E2B1CDC003CD981 /* Assets.xcassets */; };
 		A27959FC1E2B1CDC003CD981 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A27959FA1E2B1CDC003CD981 /* LaunchScreen.storyboard */; };
+		A2795A041E2B1DAB003CD981 /* AddSystemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2795A031E2B1DAB003CD981 /* AddSystemViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		A27959F81E2B1CDC003CD981 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A27959FB1E2B1CDC003CD981 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A27959FD1E2B1CDC003CD981 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2795A031E2B1DAB003CD981 /* AddSystemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddSystemViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				A27959EE1E2B1CDC003CD981 /* AppDelegate.swift */,
 				A27959F01E2B1CDC003CD981 /* ViewController.swift */,
 				A27959F21E2B1CDC003CD981 /* Main.storyboard */,
+				A2795A031E2B1DAB003CD981 /* AddSystemViewController.swift */,
 				A27959F81E2B1CDC003CD981 /* Assets.xcassets */,
 				A27959FA1E2B1CDC003CD981 /* LaunchScreen.storyboard */,
 				A27959FD1E2B1CDC003CD981 /* Info.plist */,
@@ -141,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A27959F11E2B1CDC003CD981 /* ViewController.swift in Sources */,
+				A2795A041E2B1DAB003CD981 /* AddSystemViewController.swift in Sources */,
 				A27959F71E2B1CDC003CD981 /* MindHack.xcdatamodeld in Sources */,
 				A27959EF1E2B1CDC003CD981 /* AppDelegate.swift in Sources */,
 			);

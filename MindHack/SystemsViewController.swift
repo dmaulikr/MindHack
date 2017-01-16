@@ -9,7 +9,10 @@
 import UIKit
 import CoreData
 
+
 class SystemsViewController: UIViewController {
+    
+    let tableViewCellNibName = "SystemsTableViewCell"
     
     var systems = [System]()
 
@@ -19,8 +22,8 @@ class SystemsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.delegate = self
-        tableView.dataSource = self
+        setupTableView()
+
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -39,6 +42,14 @@ class SystemsViewController: UIViewController {
         } catch let error as NSError {
             print("Fetching failed: \(error)")
         }
+    }
+    
+    func setupTableView() {
+        tableView.delegate = self
+        tableView.dataSource = self
+        
+        tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.estimatedRowHeight = 140
     }
 
 }
@@ -87,10 +98,10 @@ extension SystemsViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "systemCell", for: indexPath)
+        let cell = Bundle.main.loadNibNamed(tableViewCellNibName, owner: self, options: nil)?.first as! SystemsTableViewCell
         
         let system = systems[indexPath.row]
-        cell.textLabel?.text = system.name!
+        cell.triggerLabel?.text = system.name!
         return cell
     }
     

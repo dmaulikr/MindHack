@@ -28,20 +28,8 @@ class SystemsViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        fetchData()
+        systems = CoreDataHelper.fetchSystems()
         tableView.reloadData()
-    }
-
-    func fetchData() {
-        let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        
-        let context = appDelegate.persistentContainer.viewContext
-        
-        do {
-            systems = try context.fetch(System.fetchRequest())
-        } catch let error as NSError {
-            print("Fetching failed: \(error)")
-        }
     }
     
     func setupTableView() {

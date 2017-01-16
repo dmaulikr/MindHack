@@ -12,13 +12,12 @@ import UIKit
 
 class CoreDataHelper {
     
-    static func getContext() -> NSManagedObjectContext {
+    private class func getContext() -> NSManagedObjectContext {
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         return appDelegate.persistentContainer.viewContext
     }
     
     static func addSystem(_ name: String, isImportant: Bool) {
-        let appDelegate = UIApplication.shared.delegate as! AppDelegate
 
         let context = getContext()
         
@@ -26,16 +25,53 @@ class CoreDataHelper {
         system.name = name
         system.isImportant = isImportant
         
-        appDelegate.saveContext()
+        do {
+            try context.save()
+        } catch let error as NSError {
+            print("Saving failed while adding system: \(error.localizedDescription)")
+        }
 
     }
     
     static func updateSystem(_ oldSystem: System, name: String, isImportant: Bool) {
-        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        
+        let context = getContext()
         
         oldSystem.name = name
         oldSystem.isImportant = isImportant
+
+        do {
+          try context.save()
+        } catch let error as NSError {
+            print("Saving failed while updating system: \(error.localizedDescription)")
+        }
+    }
+    
+    static func deleteSystem(_ system: System) {
         
-        appDelegate.saveContext()
+        let context = getContext()
+        
+        context.delete(system)
+        
+        do {
+            try context.save()
+        } catch let error as NSError {
+            print("Saving failed while deleting system: \(error.localizedDescription)")
+        }
+    }
+    
+    static func fetchSystems() -> [System] {
+        
+        var systems = [System]()
+        
+        let context = getContext()
+        
+        do {
+            systems = try context.fetch(System.fetchRequest())
+        } catch let error as NSError {
+            print("Fetching failed: \(error.localizedDescription)")
+        }
+        
+        return systems
     }
 }

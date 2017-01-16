@@ -56,21 +56,12 @@ class SystemsViewController: UIViewController {
 
 extension SystemsViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        
-        let context = appDelegate.persistentContainer.viewContext
         
         if editingStyle == .delete {
             let system = systems[indexPath.row]
-            context.delete(system)
+            CoreDataHelper.deleteSystem(system)
             
-            appDelegate.saveContext()
-            
-            do {
-                systems = try context.fetch(System.fetchRequest())
-            } catch let error as NSError {
-                print("Fetching failed: \(error)")
-            }
+            systems = CoreDataHelper.fetchSystems()
         }
         
         tableView.reloadData()

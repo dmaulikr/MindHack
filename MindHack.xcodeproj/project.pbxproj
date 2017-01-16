@@ -11,6 +11,7 @@
 		A20942511E2B44E40089F98C /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20942501E2B44E40089F98C /* CoreDataHelper.swift */; };
 		A26320491E2C5C2700485FB5 /* SystemsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26320471E2C5C2700485FB5 /* SystemsTableViewCell.swift */; };
 		A263204A1E2C5C2700485FB5 /* SystemsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A26320481E2C5C2700485FB5 /* SystemsTableViewCell.xib */; };
+		A263204D1E2C665500485FB5 /* UIColor Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A263204C1E2C665500485FB5 /* UIColor Extension.swift */; };
 		A27959EF1E2B1CDC003CD981 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27959EE1E2B1CDC003CD981 /* AppDelegate.swift */; };
 		A27959F41E2B1CDC003CD981 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A27959F21E2B1CDC003CD981 /* Main.storyboard */; };
 		A27959F71E2B1CDC003CD981 /* MindHack.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A27959F51E2B1CDC003CD981 /* MindHack.xcdatamodeld */; };
@@ -24,6 +25,7 @@
 		A20942501E2B44E40089F98C /* CoreDataHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
 		A26320471E2C5C2700485FB5 /* SystemsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SystemsTableViewCell.swift; sourceTree = "<group>"; };
 		A26320481E2C5C2700485FB5 /* SystemsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SystemsTableViewCell.xib; sourceTree = "<group>"; };
+		A263204C1E2C665500485FB5 /* UIColor Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor Extension.swift"; sourceTree = "<group>"; };
 		A27959EB1E2B1CDC003CD981 /* MindHack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MindHack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A27959EE1E2B1CDC003CD981 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A27959F31E2B1CDC003CD981 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -71,6 +73,14 @@
 			name = Views;
 			sourceTree = "<group>";
 		};
+		A263204B1E2C664400485FB5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A263204C1E2C665500485FB5 /* UIColor Extension.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
 		A27959E21E2B1CDC003CD981 = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +103,7 @@
 				A209424E1E2B44CE0089F98C /* Controllers */,
 				A26320461E2C54E900485FB5 /* Views */,
 				A209424F1E2B44D70089F98C /* Plugins */,
+				A263204B1E2C664400485FB5 /* Extensions */,
 				A27959EE1E2B1CDC003CD981 /* AppDelegate.swift */,
 				A27959F21E2B1CDC003CD981 /* Main.storyboard */,
 				A27959F81E2B1CDC003CD981 /* Assets.xcassets */,
@@ -179,6 +190,7 @@
 			files = (
 				A26320491E2C5C2700485FB5 /* SystemsTableViewCell.swift in Sources */,
 				A20942511E2B44E40089F98C /* CoreDataHelper.swift in Sources */,
+				A263204D1E2C665500485FB5 /* UIColor Extension.swift in Sources */,
 				A2795A041E2B1DAB003CD981 /* DisplaySystemViewController.swift in Sources */,
 				A209424D1E2B30C30089F98C /* SystemsViewController.swift in Sources */,
 				A27959F71E2B1CDC003CD981 /* MindHack.xcdatamodeld in Sources */,

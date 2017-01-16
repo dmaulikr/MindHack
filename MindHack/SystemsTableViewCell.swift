@@ -16,8 +16,7 @@ class SystemsTableViewCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-//        triggerLabel.sizeToFit()
-//        routineLabel.sizeToFit()
+
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

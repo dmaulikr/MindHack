@@ -17,13 +17,13 @@ class CoreDataHelper {
         return appDelegate.persistentContainer.viewContext
     }
     
-    static func addSystem(_ name: String, isImportant: Bool) {
+    static func addSystem(_ trigger: String, routine: String) {
 
         let context = getContext()
         
         let system = System(context: context)
-        system.name = name
-        system.isImportant = isImportant
+        system.trigger = trigger
+        system.routine = routine
         
         do {
             try context.save()
@@ -33,12 +33,14 @@ class CoreDataHelper {
 
     }
     
-    static func updateSystem(_ oldSystem: System, name: String, isImportant: Bool) {
+    static func updateSystem(replace oldSystem: System, newTrigger: String, newRoutine: String) {
         
         let context = getContext()
         
-        oldSystem.name = name
-        oldSystem.isImportant = isImportant
+        oldSystem.trigger = newTrigger
+        oldSystem.routine = newRoutine
+        
+        
 
         do {
           try context.save()

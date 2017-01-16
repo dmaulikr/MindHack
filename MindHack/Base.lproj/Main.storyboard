@@ -6,11 +6,10 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Systems View Controller-->
+        <!--MINDHACK-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController automaticallyAdjustsScrollViewInsets="NO" id="BYZ-38-t0r" customClass="SystemsViewController" customModule="MindHack" customModuleProvider="target" sceneMemberID="viewController">
@@ -37,7 +36,7 @@
                                 </prototypes>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" red="0.17254901960784313" green="0.25098039215686274" blue="0.69019607843137254" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.99194461107254028" green="0.99615627527236938" blue="0.99600595235824585" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="KEU-FA-DGV" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="04b-oD-u95"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="KEU-FA-DGV" secondAttribute="bottom" id="CI0-IY-wrP"/>
@@ -45,7 +44,7 @@
                             <constraint firstAttribute="trailing" secondItem="KEU-FA-DGV" secondAttribute="trailing" id="e9T-ku-xHe"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="Zd6-oL-nPJ">
+                    <navigationItem key="navigationItem" title="MINDHACK" id="Zd6-oL-nPJ">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="QU0-Fq-0Tx">
                             <connections>
                                 <segue destination="e44-am-jDa" kind="show" identifier="addSystem" id="ZrX-LO-JcN"/>
@@ -61,7 +60,7 @@
             </objects>
             <point key="canvasLocation" x="1076" y="138.98050974512745"/>
         </scene>
-        <!--Display System View Controller-->
+        <!--ADD SYSTEM-->
         <scene sceneID="glw-Hj-VxV">
             <objects>
                 <viewController id="e44-am-jDa" customClass="DisplaySystemViewController" customModule="MindHack" customModuleProvider="target" sceneMemberID="viewController">
@@ -73,45 +72,52 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Your System" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zjk-fc-dnM">
-                                <rect key="frame" x="56" y="84" width="263" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Reminder" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zjk-fc-dnM">
+                                <rect key="frame" x="103" y="99" width="233" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" red="0.50674933195114136" green="0.090705700218677521" blue="0.57646232843399048" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Trigger" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gtO-2V-Ch5">
+                                <rect key="frame" x="35" y="102" width="55" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Routine" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5v3-iB-8W5">
+                                <rect key="frame" x="48" y="185" width="59" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Action" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XHi-0P-VqX">
+                                <rect key="frame" x="121" y="180" width="203" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6zu-xC-rCQ">
-                                <rect key="frame" x="163" y="147" width="51" height="31"/>
-                            </switch>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YGi-2f-N0e">
-                                <rect key="frame" x="148" y="198" width="83" height="30"/>
-                                <state key="normal" title="Add System">
-                                    <color key="titleColor" red="0.97228221455500785" green="0.18009791776466233" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="addSystem:" destination="e44-am-jDa" eventType="touchUpInside" id="2lq-Kq-sJR"/>
-                                </connections>
-                            </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.17254901960784313" green="0.25098039215686274" blue="0.69019607843137254" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="6zu-xC-rCQ" firstAttribute="centerX" secondItem="Zjk-fc-dnM" secondAttribute="centerX" id="7gB-Cr-ByA"/>
-                            <constraint firstItem="Zjk-fc-dnM" firstAttribute="top" secondItem="SL2-Yb-mA5" secondAttribute="bottom" constant="20" id="CHo-7o-ZrD"/>
-                            <constraint firstItem="Zjk-fc-dnM" firstAttribute="centerX" secondItem="VCr-x8-KEp" secondAttribute="centerX" id="DSv-ga-qhz"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Zjk-fc-dnM" secondAttribute="trailing" constant="40" id="cNA-CS-Ynd"/>
-                            <constraint firstItem="YGi-2f-N0e" firstAttribute="centerX" secondItem="6zu-xC-rCQ" secondAttribute="centerX" constant="2" id="fkU-UD-JEW"/>
-                            <constraint firstItem="Zjk-fc-dnM" firstAttribute="leading" secondItem="VCr-x8-KEp" secondAttribute="leadingMargin" constant="40" id="nOr-PH-a5U"/>
-                            <constraint firstItem="YGi-2f-N0e" firstAttribute="top" secondItem="6zu-xC-rCQ" secondAttribute="bottom" constant="20" id="t9N-4F-nkm"/>
-                            <constraint firstItem="6zu-xC-rCQ" firstAttribute="top" secondItem="Zjk-fc-dnM" secondAttribute="bottom" constant="33" id="zyo-KU-jxs"/>
-                        </constraints>
+                        <color key="backgroundColor" red="0.99606269598007202" green="0.9921298623085022" blue="0.99607473611831665" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <navigationItem key="navigationItem" title="ADD SYSTEM" id="9Va-CR-SfO">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="rS9-0D-vaf">
+                            <connections>
+                                <action selector="saveSystem:" destination="e44-am-jDa" id="hBj-DD-wgv"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
-                        <outlet property="isImportant" destination="6zu-xC-rCQ" id="ZLC-F3-IC6"/>
-                        <outlet property="nameTextField" destination="Zjk-fc-dnM" id="cvm-Ty-BNq"/>
+                        <outlet property="routineTextField" destination="XHi-0P-VqX" id="Fae-x7-Kxq"/>
+                        <outlet property="triggerTextField" destination="Zjk-fc-dnM" id="0ro-ly-G7T"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pPN-6h-X1j" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1769" y="144"/>
+            <point key="canvasLocation" x="1768.8" y="143.47826086956522"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="4RS-js-dIS">

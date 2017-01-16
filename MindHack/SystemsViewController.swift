@@ -80,7 +80,11 @@ extension SystemsViewController: UITableViewDataSource {
         let cell = Bundle.main.loadNibNamed(tableViewCellNibName, owner: self, options: nil)?.first as! SystemsTableViewCell
         
         let system = systems[indexPath.row]
-        cell.triggerLabel?.text = system.name!
+        
+        cell.triggerLabel?.text = system.trigger ?? "Couldn't find Trigger"
+        cell.routineLabel?.text = system.routine ?? "Couldn't find Routine"
+        
+        
         return cell
     }
     

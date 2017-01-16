@@ -12,35 +12,37 @@ class DisplaySystemViewController: UIViewController {
     
     var system: System?
 
-    @IBOutlet weak var nameTextField: UITextField!
-    
-    @IBOutlet weak var isImportant: UISwitch!
+    @IBOutlet weak var triggerTextField: UITextField!
+
+    @IBOutlet weak var routineTextField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         if let system = system {
-            nameTextField.text = system.name
-            isImportant.isOn = system.isImportant
+            triggerTextField.text = system.trigger
+            routineTextField.text = system.routine
         } else {
-            nameTextField.text = ""
-            isImportant.isOn = true
+            triggerTextField.text = ""
+            routineTextField.text = ""
         }
     }
 
     
-    @IBAction func addSystem(_ sender: UIButton) {
-        
-        let name = nameTextField.text ?? ""
-        let isImportant = self.isImportant.isOn
+    @IBAction func saveSystem(_ sender: UIBarButtonItem) {
+        let trigger = triggerTextField.text ?? ""
+        let routine = routineTextField.text ?? ""
+
         
         if let system = system {
-            CoreDataHelper.updateSystem(system, name: name, isImportant: isImportant)
+            CoreDataHelper.updateSystem(replace: system, newTrigger: trigger, newRoutine: routine)
         } else {
-            CoreDataHelper.addSystem(name, isImportant: isImportant)
+            CoreDataHelper.addSystem(trigger, routine: routine)
         }
         
         navigationController!.popViewController(animated: true)
+        
     }
+
     
 }

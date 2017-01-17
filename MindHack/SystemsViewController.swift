@@ -37,7 +37,7 @@ class SystemsViewController: UIViewController {
         tableView.dataSource = self
         
         tableView.rowHeight = UITableViewAutomaticDimension
-        tableView.estimatedRowHeight = 140
+//        tableView.estimatedRowHeight = 140
     }
 
 }

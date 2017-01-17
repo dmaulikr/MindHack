@@ -7,94 +7,154 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0B197DE15674E3F018385049ADCF88CC /* SCLAlertView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 780E9115DC64E18BDE0435285E9D4F4D /* SCLAlertView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0CF542D049F7C1C34FCED52358929A50 /* SCLExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79976012D991BBCB570D7574B6552363 /* SCLExtensions.swift */; };
-		40A4AD6B57BF1758249869CAFCFFCFA7 /* Pods-MindHack-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 31B2D77A2402882924F65B8BD266B93B /* Pods-MindHack-dummy.m */; };
-		6E02203F8D1085DF1FABE14CA75F3683 /* SCLAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D7C12624AB36573B17A345B5C28FFE /* SCLAlertView.swift */; };
-		8053D201062A64719C334EDCBB5163FF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		8DBA8AA7622C4B6B955CB187302DB491 /* Pods-MindHack-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DC1132DE6926D3438E2A0155DD32BE54 /* Pods-MindHack-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A4D7480114DD5B3C049FAD1E3F7321C5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		EEB887455833B38BC03DBCFC0E118570 /* SCLAlertView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D826BF6AA60C0C13D9E2DD5CE5604CD4 /* SCLAlertView-dummy.m */; };
+		157E0F6742C487326298BB477E40B9ED /* YokoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023F5BE82111C59C1CC83D21B303CCDC /* YokoTextField.swift */; };
+		170ED8D196082DF16D4F5EE1D771491B /* MinoruTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B0998494483B9B65859A44C9A143DF /* MinoruTextField.swift */; };
+		2A9F299D492B2F4DFF854D83A3B400C3 /* Pods-MindHack-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DC1132DE6926D3438E2A0155DD32BE54 /* Pods-MindHack-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2E0317714E044C67BD75EFF682E752A4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		37E4D38DB54BA4702EEE46835FFF0E8F /* YoshikoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47658802ED57D06763C46CCFA5FABFA /* YoshikoTextField.swift */; };
+		686653143C053FA52FA50E9B7C9A3C02 /* TextFieldEffects-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 528A931858A54FEA2A28301451DB83D7 /* TextFieldEffects-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6EDBDD81BB43DF6A2A6B062BB9C30CBF /* SCLAlertView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D11261C054F528A5A01E594677AFC44 /* SCLAlertView-dummy.m */; };
+		93DDBEE1D5584A0D74743D14376E49DC /* SCLExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4590AB1906F40E62F66F9B4E11E5A980 /* SCLExtensions.swift */; };
+		94DCCE89E4058DC3CDE70EDDE23396BB /* SCLAlertView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 334C40265E4996BB103F1FFAD42049DE /* SCLAlertView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9835D2AEB76DA0C49B15AF30FDA83B4C /* SCLAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFFCE6D3F4A0D1D5CAFF6EC1F044E5A /* SCLAlertView.swift */; };
+		B8A6C7EB5B9C3F13B74E5C5E5BB656A7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		BEDF025C6912C9E446EFF4227AE27B17 /* HoshiTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0832FC5923669FF01C11205AAA862F0E /* HoshiTextField.swift */; };
+		C078EEDC15ADE82D297474E467FB45EE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		C2DF1C1E61A0C4D149E0F801D5E72F34 /* MadokaTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F44915EC9DCFE1662E50A8953F23557 /* MadokaTextField.swift */; };
+		C7ADB7D55887C0766A618E2A0A9842F5 /* AkiraTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF80A4644025E86EE1C6D1D351F52F1 /* AkiraTextField.swift */; };
+		CABACC7DDCF9F25E5FBC28EDEFAFACFD /* JiroTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DDBA3C58850ADB7421F343E9B7A3CA /* JiroTextField.swift */; };
+		D65BCC06323D6216A5C77C9A1C61F68B /* Pods-MindHack-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 31B2D77A2402882924F65B8BD266B93B /* Pods-MindHack-dummy.m */; };
+		DFFA8F66F748A2B9C56DA50302955485 /* TextFieldEffects-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B2232D7F58B583AAB5AA6755965B3F6 /* TextFieldEffects-dummy.m */; };
+		E018B9EC1CA01FBE8C6624439E5841FA /* KaedeTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F80A1B604C44681E022B4D1CC06537F /* KaedeTextField.swift */; };
+		E730225CAE3722CECB9BC83CB2476A4B /* TextFieldsEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574E28A548BA302C5EAB91C4257F07CB /* TextFieldsEffects.swift */; };
+		F32FE3ED0CAAD87E56F423BBFC044F41 /* IsaoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35AB89517E15F301089F562F0A6402B /* IsaoTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		4E51FC3DFB64B3FE3BA34151E2A88949 /* PBXContainerItemProxy */ = {
+		B82932899D7CCE5A96B926BCC333582D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 9E714BFFBA20090654A8E6ADE3E3C6D5;
+			remoteGlobalIDString = ED0F35500673475EC13EC930C212364B;
+			remoteInfo = TextFieldEffects;
+		};
+		C5C6739E29091FC47791D49CA8F9CD65 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3271C3669CB64A23CAE55184360AD602;
 			remoteInfo = SCLAlertView;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		18DA4035587B16C18BA510E9CBEA4D51 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01D18B813775EFDD0DD20AE2B21B1CB5 /* TextFieldEffects.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TextFieldEffects.xcconfig; sourceTree = "<group>"; };
+		023F5BE82111C59C1CC83D21B303CCDC /* YokoTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YokoTextField.swift; path = TextFieldEffects/TextFieldEffects/YokoTextField.swift; sourceTree = "<group>"; };
+		0380A94F6847A7F9916C81CE76B4EE5F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07DDBA3C58850ADB7421F343E9B7A3CA /* JiroTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JiroTextField.swift; path = TextFieldEffects/TextFieldEffects/JiroTextField.swift; sourceTree = "<group>"; };
+		0832FC5923669FF01C11205AAA862F0E /* HoshiTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HoshiTextField.swift; path = TextFieldEffects/TextFieldEffects/HoshiTextField.swift; sourceTree = "<group>"; };
+		0AFFCE6D3F4A0D1D5CAFF6EC1F044E5A /* SCLAlertView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SCLAlertView.swift; path = SCLAlertView/SCLAlertView.swift; sourceTree = "<group>"; };
+		0DF80A4644025E86EE1C6D1D351F52F1 /* AkiraTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AkiraTextField.swift; path = TextFieldEffects/TextFieldEffects/AkiraTextField.swift; sourceTree = "<group>"; };
+		16B0998494483B9B65859A44C9A143DF /* MinoruTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MinoruTextField.swift; path = TextFieldEffects/TextFieldEffects/MinoruTextField.swift; sourceTree = "<group>"; };
 		2A947170CD2C23D87530FD4E5CF5FF6C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30268E0164515A97648450D31FC7F5CD /* TextFieldEffects-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TextFieldEffects-prefix.pch"; sourceTree = "<group>"; };
 		31B2D77A2402882924F65B8BD266B93B /* Pods-MindHack-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MindHack-dummy.m"; sourceTree = "<group>"; };
+		334C40265E4996BB103F1FFAD42049DE /* SCLAlertView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SCLAlertView-umbrella.h"; sourceTree = "<group>"; };
+		366804C46BBA84D2FA66A60B789187F0 /* SCLAlertView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SCLAlertView.framework; path = SCLAlertView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F44915EC9DCFE1662E50A8953F23557 /* MadokaTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MadokaTextField.swift; path = TextFieldEffects/TextFieldEffects/MadokaTextField.swift; sourceTree = "<group>"; };
+		4590AB1906F40E62F66F9B4E11E5A980 /* SCLExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SCLExtensions.swift; path = SCLAlertView/SCLExtensions.swift; sourceTree = "<group>"; };
 		4716A52BA3FA0B0DD9F8AF18FFD32373 /* Pods-MindHack.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-MindHack.modulemap"; sourceTree = "<group>"; };
-		4A915754953BDE3FBECB5447865A4567 /* SCLAlertView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SCLAlertView.xcconfig; sourceTree = "<group>"; };
-		53D7C12624AB36573B17A345B5C28FFE /* SCLAlertView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SCLAlertView.swift; path = SCLAlertView/SCLAlertView.swift; sourceTree = "<group>"; };
+		528A931858A54FEA2A28301451DB83D7 /* TextFieldEffects-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TextFieldEffects-umbrella.h"; sourceTree = "<group>"; };
 		574BEB424AE4E7D9E9D17BC7428A42AA /* Pods-MindHack-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MindHack-acknowledgements.markdown"; sourceTree = "<group>"; };
+		574E28A548BA302C5EAB91C4257F07CB /* TextFieldsEffects.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextFieldsEffects.swift; path = TextFieldEffects/TextFieldEffects/TextFieldsEffects.swift; sourceTree = "<group>"; };
+		5AA7EDFCB3E6CA0BB0510D84A561A221 /* Pods_MindHack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MindHack.framework; path = "Pods-MindHack.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B2232D7F58B583AAB5AA6755965B3F6 /* TextFieldEffects-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TextFieldEffects-dummy.m"; sourceTree = "<group>"; };
 		6CE8DE28778D83FE0F6050CB8977FB55 /* Pods-MindHack-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MindHack-resources.sh"; sourceTree = "<group>"; };
+		6EC906472C64BD3648C222DD8568927D /* TextFieldEffects.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TextFieldEffects.framework; path = TextFieldEffects.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		71343CF7427DD2CD013E1686FCAD91FF /* Pods-MindHack-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MindHack-frameworks.sh"; sourceTree = "<group>"; };
-		780E9115DC64E18BDE0435285E9D4F4D /* SCLAlertView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SCLAlertView-umbrella.h"; sourceTree = "<group>"; };
-		79976012D991BBCB570D7574B6552363 /* SCLExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SCLExtensions.swift; path = SCLAlertView/SCLExtensions.swift; sourceTree = "<group>"; };
 		81BF3EAC18666E238160B9EFBE9E153F /* Pods-MindHack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MindHack.debug.xcconfig"; sourceTree = "<group>"; };
+		85B91016E38D2ECFF08D01F8745E3470 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		88000F743A9AC57371F0E87A5DBE7C69 /* Pods-MindHack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MindHack.release.xcconfig"; sourceTree = "<group>"; };
-		8840B3CF66755037006A0AC7A697BE6D /* SCLAlertView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SCLAlertView.framework; path = SCLAlertView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D11261C054F528A5A01E594677AFC44 /* SCLAlertView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SCLAlertView-dummy.m"; sourceTree = "<group>"; };
+		8F80A1B604C44681E022B4D1CC06537F /* KaedeTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KaedeTextField.swift; path = TextFieldEffects/TextFieldEffects/KaedeTextField.swift; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		B05089A7F3DFB8AD1AD1031B905E9ED0 /* Pods-MindHack-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MindHack-acknowledgements.plist"; sourceTree = "<group>"; };
+		B0DCC594937427BCED183ABC8BCC35B2 /* SCLAlertView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SCLAlertView-prefix.pch"; sourceTree = "<group>"; };
+		C077EC5A8E38654518F886D218291EA2 /* TextFieldEffects.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = TextFieldEffects.modulemap; sourceTree = "<group>"; };
+		C47658802ED57D06763C46CCFA5FABFA /* YoshikoTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YoshikoTextField.swift; path = TextFieldEffects/TextFieldEffects/YoshikoTextField.swift; sourceTree = "<group>"; };
 		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		D826BF6AA60C0C13D9E2DD5CE5604CD4 /* SCLAlertView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SCLAlertView-dummy.m"; sourceTree = "<group>"; };
+		D80ED150A74B73FA88288FD230413E54 /* SCLAlertView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SCLAlertView.xcconfig; sourceTree = "<group>"; };
 		DC1132DE6926D3438E2A0155DD32BE54 /* Pods-MindHack-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MindHack-umbrella.h"; sourceTree = "<group>"; };
-		ED09B8D16E50B7F2DAED9CF350FEF481 /* SCLAlertView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SCLAlertView.modulemap; sourceTree = "<group>"; };
-		F019C43A509D0B85780A4E6151FD1C40 /* Pods_MindHack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MindHack.framework; path = "Pods-MindHack.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F7AF306D2AAF90D6D06E15543364D4C7 /* SCLAlertView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SCLAlertView-prefix.pch"; sourceTree = "<group>"; };
+		E35AB89517E15F301089F562F0A6402B /* IsaoTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IsaoTextField.swift; path = TextFieldEffects/TextFieldEffects/IsaoTextField.swift; sourceTree = "<group>"; };
+		F13F61E439BC808E3E056CF874C92384 /* SCLAlertView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SCLAlertView.modulemap; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		28E411CC21AE51E095CD0E24F36ECD0B /* Frameworks */ = {
+		4B8172A4644DECAC86B748CD4CB943CD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8053D201062A64719C334EDCBB5163FF /* Foundation.framework in Frameworks */,
+				C078EEDC15ADE82D297474E467FB45EE /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		342DCBFBC4E017504EE569D7A1BC8903 /* Frameworks */ = {
+		746045523B79104D7281A4F62514E647 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A4D7480114DD5B3C049FAD1E3F7321C5 /* Foundation.framework in Frameworks */,
+				2E0317714E044C67BD75EFF682E752A4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9A9D157D1ACE09DF8F77E30BE103089 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8A6C7EB5B9C3F13B74E5C5E5BB656A7 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		21236440975E0D8924F5FBFD0C9D1478 /* SCLAlertView */ = {
+		17CCB5308DFE1A2850C61DE88FC19B12 /* TextFieldEffects */ = {
 			isa = PBXGroup;
 			children = (
-				53D7C12624AB36573B17A345B5C28FFE /* SCLAlertView.swift */,
-				79976012D991BBCB570D7574B6552363 /* SCLExtensions.swift */,
-				42753F0DBF438AAF17062729B2173DED /* Support Files */,
+				0DF80A4644025E86EE1C6D1D351F52F1 /* AkiraTextField.swift */,
+				0832FC5923669FF01C11205AAA862F0E /* HoshiTextField.swift */,
+				E35AB89517E15F301089F562F0A6402B /* IsaoTextField.swift */,
+				07DDBA3C58850ADB7421F343E9B7A3CA /* JiroTextField.swift */,
+				8F80A1B604C44681E022B4D1CC06537F /* KaedeTextField.swift */,
+				3F44915EC9DCFE1662E50A8953F23557 /* MadokaTextField.swift */,
+				16B0998494483B9B65859A44C9A143DF /* MinoruTextField.swift */,
+				574E28A548BA302C5EAB91C4257F07CB /* TextFieldsEffects.swift */,
+				023F5BE82111C59C1CC83D21B303CCDC /* YokoTextField.swift */,
+				C47658802ED57D06763C46CCFA5FABFA /* YoshikoTextField.swift */,
+				ABCB3542B56506A37B0662FE62F2E3FD /* Support Files */,
+			);
+			name = TextFieldEffects;
+			path = TextFieldEffects;
+			sourceTree = "<group>";
+		};
+		39AB15EEC435E4CE7B2B4D3EDB29EA36 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5AA7EDFCB3E6CA0BB0510D84A561A221 /* Pods_MindHack.framework */,
+				366804C46BBA84D2FA66A60B789187F0 /* SCLAlertView.framework */,
+				6EC906472C64BD3648C222DD8568927D /* TextFieldEffects.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4D62704CAF318CA2897A780C5443365F /* SCLAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				0AFFCE6D3F4A0D1D5CAFF6EC1F044E5A /* SCLAlertView.swift */,
+				4590AB1906F40E62F66F9B4E11E5A980 /* SCLExtensions.swift */,
+				9314557F3553D780BE8DC13774018733 /* Support Files */,
 			);
 			name = SCLAlertView;
 			path = SCLAlertView;
-			sourceTree = "<group>";
-		};
-		42753F0DBF438AAF17062729B2173DED /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				18DA4035587B16C18BA510E9CBEA4D51 /* Info.plist */,
-				ED09B8D16E50B7F2DAED9CF350FEF481 /* SCLAlertView.modulemap */,
-				4A915754953BDE3FBECB5447865A4567 /* SCLAlertView.xcconfig */,
-				D826BF6AA60C0C13D9E2DD5CE5604CD4 /* SCLAlertView-dummy.m */,
-				F7AF306D2AAF90D6D06E15543364D4C7 /* SCLAlertView-prefix.pch */,
-				780E9115DC64E18BDE0435285E9D4F4D /* SCLAlertView-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/SCLAlertView";
 			sourceTree = "<group>";
 		};
 		65E634E5D0964603DD0EB7E7429B9389 /* Targets Support Files */ = {
@@ -118,19 +178,38 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				CE1D7C96A3A3C0CED68FBC36DB57C4C4 /* Pods */,
-				B1C68552FE54593321397BD4418F89D0 /* Products */,
+				FB07F174B912A206C74CACA259104AF4 /* Pods */,
+				39AB15EEC435E4CE7B2B4D3EDB29EA36 /* Products */,
 				65E634E5D0964603DD0EB7E7429B9389 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		B1C68552FE54593321397BD4418F89D0 /* Products */ = {
+		9314557F3553D780BE8DC13774018733 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				F019C43A509D0B85780A4E6151FD1C40 /* Pods_MindHack.framework */,
-				8840B3CF66755037006A0AC7A697BE6D /* SCLAlertView.framework */,
+				0380A94F6847A7F9916C81CE76B4EE5F /* Info.plist */,
+				F13F61E439BC808E3E056CF874C92384 /* SCLAlertView.modulemap */,
+				D80ED150A74B73FA88288FD230413E54 /* SCLAlertView.xcconfig */,
+				8D11261C054F528A5A01E594677AFC44 /* SCLAlertView-dummy.m */,
+				B0DCC594937427BCED183ABC8BCC35B2 /* SCLAlertView-prefix.pch */,
+				334C40265E4996BB103F1FFAD42049DE /* SCLAlertView-umbrella.h */,
 			);
-			name = Products;
+			name = "Support Files";
+			path = "../Target Support Files/SCLAlertView";
+			sourceTree = "<group>";
+		};
+		ABCB3542B56506A37B0662FE62F2E3FD /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				85B91016E38D2ECFF08D01F8745E3470 /* Info.plist */,
+				C077EC5A8E38654518F886D218291EA2 /* TextFieldEffects.modulemap */,
+				01D18B813775EFDD0DD20AE2B21B1CB5 /* TextFieldEffects.xcconfig */,
+				5B2232D7F58B583AAB5AA6755965B3F6 /* TextFieldEffects-dummy.m */,
+				30268E0164515A97648450D31FC7F5CD /* TextFieldEffects-prefix.pch */,
+				528A931858A54FEA2A28301451DB83D7 /* TextFieldEffects-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/TextFieldEffects";
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -159,10 +238,11 @@
 			path = "Target Support Files/Pods-MindHack";
 			sourceTree = "<group>";
 		};
-		CE1D7C96A3A3C0CED68FBC36DB57C4C4 /* Pods */ = {
+		FB07F174B912A206C74CACA259104AF4 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				21236440975E0D8924F5FBFD0C9D1478 /* SCLAlertView */,
+				4D62704CAF318CA2897A780C5443365F /* SCLAlertView */,
+				17CCB5308DFE1A2850C61DE88FC19B12 /* TextFieldEffects */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -170,32 +250,40 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		4BFE4D26169B3E87D98779492AC46402 /* Headers */ = {
+		C6D0773F94DE55FD3DA8DCA6F9FD2A3C /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8DBA8AA7622C4B6B955CB187302DB491 /* Pods-MindHack-umbrella.h in Headers */,
+				686653143C053FA52FA50E9B7C9A3C02 /* TextFieldEffects-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CC18B8874F37B8064D044274B37D9C0F /* Headers */ = {
+		D94DF73A3261FE8AE464C7475CCC1968 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0B197DE15674E3F018385049ADCF88CC /* SCLAlertView-umbrella.h in Headers */,
+				94DCCE89E4058DC3CDE70EDDE23396BB /* SCLAlertView-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF2EAC8409A0E4BC5F2BE1AB1E98D384 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A9F299D492B2F4DFF854D83A3B400C3 /* Pods-MindHack-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		9E714BFFBA20090654A8E6ADE3E3C6D5 /* SCLAlertView */ = {
+		3271C3669CB64A23CAE55184360AD602 /* SCLAlertView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B2DFAEFF3D3997A6B21301F9407382B2 /* Build configuration list for PBXNativeTarget "SCLAlertView" */;
+			buildConfigurationList = F464ABBC3582D61FE5A3F3EF376C8F96 /* Build configuration list for PBXNativeTarget "SCLAlertView" */;
 			buildPhases = (
-				88211428E7A413E6365E1EB6BF56421A /* Sources */,
-				28E411CC21AE51E095CD0E24F36ECD0B /* Frameworks */,
-				CC18B8874F37B8064D044274B37D9C0F /* Headers */,
+				40F92B34E55EDD23802C1FA4C84F8F92 /* Sources */,
+				B9A9D157D1ACE09DF8F77E30BE103089 /* Frameworks */,
+				D94DF73A3261FE8AE464C7475CCC1968 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -203,25 +291,43 @@
 			);
 			name = SCLAlertView;
 			productName = SCLAlertView;
-			productReference = 8840B3CF66755037006A0AC7A697BE6D /* SCLAlertView.framework */;
+			productReference = 366804C46BBA84D2FA66A60B789187F0 /* SCLAlertView.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		EF4B14DBFA52D6509F29AF35EBCD7D85 /* Pods-MindHack */ = {
+		6AD4B902C6648C0114371644B628040C /* Pods-MindHack */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 864B936CFFAA6BCCE010EC053A5DFA18 /* Build configuration list for PBXNativeTarget "Pods-MindHack" */;
+			buildConfigurationList = 48D859D6CDA8107C66603804E9CCB735 /* Build configuration list for PBXNativeTarget "Pods-MindHack" */;
 			buildPhases = (
-				B045B6CA20520458FAEC27ABD3F7CE02 /* Sources */,
-				342DCBFBC4E017504EE569D7A1BC8903 /* Frameworks */,
-				4BFE4D26169B3E87D98779492AC46402 /* Headers */,
+				41DBBCC29A6B52F857174E815C22144A /* Sources */,
+				4B8172A4644DECAC86B748CD4CB943CD /* Frameworks */,
+				FF2EAC8409A0E4BC5F2BE1AB1E98D384 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				104E3620229B140E2B8FF561E2FF972E /* PBXTargetDependency */,
+				5239D707A9A155A205C307246E08D7E3 /* PBXTargetDependency */,
+				600D6A153F9AF022C3EFD606AE32DE2E /* PBXTargetDependency */,
 			);
 			name = "Pods-MindHack";
 			productName = "Pods-MindHack";
-			productReference = F019C43A509D0B85780A4E6151FD1C40 /* Pods_MindHack.framework */;
+			productReference = 5AA7EDFCB3E6CA0BB0510D84A561A221 /* Pods_MindHack.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		ED0F35500673475EC13EC930C212364B /* TextFieldEffects */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA9057D8FE2C5875F1FF98D0D12D3B89 /* Build configuration list for PBXNativeTarget "TextFieldEffects" */;
+			buildPhases = (
+				8D7FB0C7BB92A9D23853575A46F513FC /* Sources */,
+				746045523B79104D7281A4F62514E647 /* Frameworks */,
+				C6D0773F94DE55FD3DA8DCA6F9FD2A3C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TextFieldEffects;
+			productName = TextFieldEffects;
+			productReference = 6EC906472C64BD3648C222DD8568927D /* TextFieldEffects.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -241,43 +347,68 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = B1C68552FE54593321397BD4418F89D0 /* Products */;
+			productRefGroup = 39AB15EEC435E4CE7B2B4D3EDB29EA36 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				EF4B14DBFA52D6509F29AF35EBCD7D85 /* Pods-MindHack */,
-				9E714BFFBA20090654A8E6ADE3E3C6D5 /* SCLAlertView */,
+				6AD4B902C6648C0114371644B628040C /* Pods-MindHack */,
+				3271C3669CB64A23CAE55184360AD602 /* SCLAlertView */,
+				ED0F35500673475EC13EC930C212364B /* TextFieldEffects */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		88211428E7A413E6365E1EB6BF56421A /* Sources */ = {
+		40F92B34E55EDD23802C1FA4C84F8F92 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EEB887455833B38BC03DBCFC0E118570 /* SCLAlertView-dummy.m in Sources */,
-				6E02203F8D1085DF1FABE14CA75F3683 /* SCLAlertView.swift in Sources */,
-				0CF542D049F7C1C34FCED52358929A50 /* SCLExtensions.swift in Sources */,
+				6EDBDD81BB43DF6A2A6B062BB9C30CBF /* SCLAlertView-dummy.m in Sources */,
+				9835D2AEB76DA0C49B15AF30FDA83B4C /* SCLAlertView.swift in Sources */,
+				93DDBEE1D5584A0D74743D14376E49DC /* SCLExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B045B6CA20520458FAEC27ABD3F7CE02 /* Sources */ = {
+		41DBBCC29A6B52F857174E815C22144A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				40A4AD6B57BF1758249869CAFCFFCFA7 /* Pods-MindHack-dummy.m in Sources */,
+				D65BCC06323D6216A5C77C9A1C61F68B /* Pods-MindHack-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D7FB0C7BB92A9D23853575A46F513FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7ADB7D55887C0766A618E2A0A9842F5 /* AkiraTextField.swift in Sources */,
+				BEDF025C6912C9E446EFF4227AE27B17 /* HoshiTextField.swift in Sources */,
+				F32FE3ED0CAAD87E56F423BBFC044F41 /* IsaoTextField.swift in Sources */,
+				CABACC7DDCF9F25E5FBC28EDEFAFACFD /* JiroTextField.swift in Sources */,
+				E018B9EC1CA01FBE8C6624439E5841FA /* KaedeTextField.swift in Sources */,
+				C2DF1C1E61A0C4D149E0F801D5E72F34 /* MadokaTextField.swift in Sources */,
+				170ED8D196082DF16D4F5EE1D771491B /* MinoruTextField.swift in Sources */,
+				DFFA8F66F748A2B9C56DA50302955485 /* TextFieldEffects-dummy.m in Sources */,
+				E730225CAE3722CECB9BC83CB2476A4B /* TextFieldsEffects.swift in Sources */,
+				157E0F6742C487326298BB477E40B9ED /* YokoTextField.swift in Sources */,
+				37E4D38DB54BA4702EEE46835FFF0E8F /* YoshikoTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		104E3620229B140E2B8FF561E2FF972E /* PBXTargetDependency */ = {
+		5239D707A9A155A205C307246E08D7E3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SCLAlertView;
-			target = 9E714BFFBA20090654A8E6ADE3E3C6D5 /* SCLAlertView */;
-			targetProxy = 4E51FC3DFB64B3FE3BA34151E2A88949 /* PBXContainerItemProxy */;
+			target = 3271C3669CB64A23CAE55184360AD602 /* SCLAlertView */;
+			targetProxy = C5C6739E29091FC47791D49CA8F9CD65 /* PBXContainerItemProxy */;
+		};
+		600D6A153F9AF022C3EFD606AE32DE2E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TextFieldEffects;
+			target = ED0F35500673475EC13EC930C212364B /* TextFieldEffects */;
+			targetProxy = B82932899D7CCE5A96B926BCC333582D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -326,9 +457,77 @@
 			};
 			name = Debug;
 		};
-		24CADE150C5F09853D620F0C163F2E55 /* Debug */ = {
+		242C1B937729A475261BD930241B9407 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4A915754953BDE3FBECB5447865A4567 /* SCLAlertView.xcconfig */;
+			baseConfigurationReference = 81BF3EAC18666E238160B9EFBE9E153F /* Pods-MindHack.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-MindHack/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MindHack/Pods-MindHack.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_MindHack;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4BE02C27A50A4EF24C8483B27CC1461B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D80ED150A74B73FA88288FD230413E54 /* SCLAlertView.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SCLAlertView/SCLAlertView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SCLAlertView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SCLAlertView/SCLAlertView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SCLAlertView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		53CBC5FD229B8DA644C6BD6CC29FA191 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D80ED150A74B73FA88288FD230413E54 /* SCLAlertView.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -359,39 +558,7 @@
 			};
 			name = Debug;
 		};
-		4A7DCF73FB30710CD601BCD88BFD101E /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4A915754953BDE3FBECB5447865A4567 /* SCLAlertView.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SCLAlertView/SCLAlertView-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SCLAlertView/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SCLAlertView/SCLAlertView.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = SCLAlertView;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		8EDE99988FE12B71DC65287046124985 /* Release */ = {
+		5AE6F142CABFFCF81EF1AA0FC2E8B668 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 88000F743A9AC57371F0E87A5DBE7C69 /* Pods-MindHack.release.xcconfig */;
 			buildSettings = {
@@ -426,9 +593,41 @@
 			};
 			name = Release;
 		};
-		A9DD386F069110AA71C21F503A3505BA /* Debug */ = {
+		97C0B8CF70686E1C928C7755ACD9B1BE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 81BF3EAC18666E238160B9EFBE9E153F /* Pods-MindHack.debug.xcconfig */;
+			baseConfigurationReference = 01D18B813775EFDD0DD20AE2B21B1CB5 /* TextFieldEffects.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/TextFieldEffects/TextFieldEffects-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TextFieldEffects/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TextFieldEffects/TextFieldEffects.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = TextFieldEffects;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D803C6300504B93A0BB5BA223185DFC0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01D18B813775EFDD0DD20AE2B21B1CB5 /* TextFieldEffects.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -441,21 +640,18 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-MindHack/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/TextFieldEffects/TextFieldEffects-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TextFieldEffects/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-MindHack/Pods-MindHack.modulemap";
+				MODULEMAP_FILE = "Target Support Files/TextFieldEffects/TextFieldEffects.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_MindHack;
+				PRODUCT_NAME = TextFieldEffects;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -514,20 +710,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		864B936CFFAA6BCCE010EC053A5DFA18 /* Build configuration list for PBXNativeTarget "Pods-MindHack" */ = {
+		48D859D6CDA8107C66603804E9CCB735 /* Build configuration list for PBXNativeTarget "Pods-MindHack" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A9DD386F069110AA71C21F503A3505BA /* Debug */,
-				8EDE99988FE12B71DC65287046124985 /* Release */,
+				242C1B937729A475261BD930241B9407 /* Debug */,
+				5AE6F142CABFFCF81EF1AA0FC2E8B668 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B2DFAEFF3D3997A6B21301F9407382B2 /* Build configuration list for PBXNativeTarget "SCLAlertView" */ = {
+		BA9057D8FE2C5875F1FF98D0D12D3B89 /* Build configuration list for PBXNativeTarget "TextFieldEffects" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				24CADE150C5F09853D620F0C163F2E55 /* Debug */,
-				4A7DCF73FB30710CD601BCD88BFD101E /* Release */,
+				D803C6300504B93A0BB5BA223185DFC0 /* Debug */,
+				97C0B8CF70686E1C928C7755ACD9B1BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F464ABBC3582D61FE5A3F3EF376C8F96 /* Build configuration list for PBXNativeTarget "SCLAlertView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53CBC5FD229B8DA644C6BD6CC29FA191 /* Debug */,
+				4BE02C27A50A4EF24C8483B27CC1461B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

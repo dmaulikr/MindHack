@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--MINDHACK-->
+        <!--Systems-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController automaticallyAdjustsScrollViewInsets="NO" id="BYZ-38-t0r" customClass="SystemsViewController" customModule="MindHack" customModuleProvider="target" sceneMemberID="viewController">
@@ -44,7 +44,7 @@
                             <constraint firstAttribute="trailing" secondItem="KEU-FA-DGV" secondAttribute="trailing" id="e9T-ku-xHe"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="MINDHACK" id="Zd6-oL-nPJ">
+                    <navigationItem key="navigationItem" title="Systems" id="Zd6-oL-nPJ">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="QU0-Fq-0Tx">
                             <connections>
                                 <segue destination="e44-am-jDa" kind="show" identifier="addSystem" id="ZrX-LO-JcN"/>
@@ -60,7 +60,7 @@
             </objects>
             <point key="canvasLocation" x="1076" y="138.98050974512745"/>
         </scene>
-        <!--ADD SYSTEM-->
+        <!--Configure System-->
         <scene sceneID="glw-Hj-VxV">
             <objects>
                 <viewController id="e44-am-jDa" customClass="DisplaySystemViewController" customModule="MindHack" customModuleProvider="target" sceneMemberID="viewController">
@@ -103,7 +103,7 @@
                         </subviews>
                         <color key="backgroundColor" red="0.99606269598007202" green="0.9921298623085022" blue="0.99607473611831665" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" title="ADD SYSTEM" id="9Va-CR-SfO">
+                    <navigationItem key="navigationItem" title="Configure System" id="9Va-CR-SfO">
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="rS9-0D-vaf">
                             <connections>
                                 <action selector="saveSystem:" destination="e44-am-jDa" id="hBj-DD-wgv"/>

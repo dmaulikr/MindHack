@@ -20,9 +20,6 @@ class DisplaySystemViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        SCLAlertView().showInfo("Important info", subTitle: "You are great")
-        
-        
         if let system = system {
             triggerTextField.text = system.trigger
             routineTextField.text = system.routine
@@ -36,11 +33,11 @@ class DisplaySystemViewController: UIViewController {
     @IBAction func saveSystem(_ sender: UIBarButtonItem) {
         
         if triggerTextField.text == "" && routineTextField.text == "" {
-            SCLAlertView().showError("Sorry", subTitle: "You haven't entered a trigger and routine")
+            alertUserOfError(title: "Sorry", subTitle: "You haven't entered a trigger and routine")
         } else if triggerTextField.text == "" {
-            SCLAlertView().showError("Sorry", subTitle: "You haven't entered a trigger")
+            alertUserOfError(title: "Sorry", subTitle: "You haven't entered a trigger")
         } else if routineTextField.text == "" {
-            SCLAlertView().showError("Sorry", subTitle: "You haven't entered a routine")
+            alertUserOfError(title: "Sorry", subTitle: "You haven't entered a routine")
         } else {
             let trigger = triggerTextField.text ?? ""
             let routine = routineTextField.text ?? ""
@@ -54,6 +51,18 @@ class DisplaySystemViewController: UIViewController {
             
             navigationController!.popViewController(animated: true)
         }
+    }
+    
+    func alertUserOfError(title: String, subTitle: String) {
+        let appearance = SCLAlertView.SCLAppearance(
+            kTitleFont: UIFont(name: "HelveticaNeue", size: 20)!,
+            kTextFont: UIFont(name: "HelveticaNeue", size: 14)!,
+            kButtonFont: UIFont(name: "HelveticaNeue-Bold", size: 14)!,
+            showCloseButton: true
+        )
+        
+        let alertView = SCLAlertView(appearance: appearance)
+        alertView.showError(title, subTitle: subTitle)
     }
     
     

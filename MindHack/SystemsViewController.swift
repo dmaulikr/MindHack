@@ -10,7 +10,6 @@ import UIKit
 import CoreData
 import DZNEmptyDataSet
 
-
 class SystemsViewController: UIViewController {
     
     let tableViewCellNibName = "SystemsTableViewCell"
@@ -119,7 +118,7 @@ extension SystemsViewController: DZNEmptyDataSetSource {
         
         let attributes: [String: Any] = [
             NSFontAttributeName: UIFont(name: "HelveticaNeue", size: 14)!,
-            NSForegroundColorAttributeName: UIColor.lightGray,
+            NSForegroundColorAttributeName: UIColor.lightGrayBorder(),
             NSParagraphStyleAttributeName: paragraph
         ]
         
@@ -132,18 +131,6 @@ extension SystemsViewController: DZNEmptyDataSetSource {
         return UIColor.mindHackBlue()
     }
     
-    func imageAnimation(forEmptyDataSet scrollView: UIScrollView!) -> CAAnimation! {
-        let animation = CABasicAnimation(keyPath: "transform")
-        animation.fromValue = NSValue(caTransform3D: CATransform3DIdentity)
-        
-        animation.toValue = NSValue(caTransform3D: CATransform3DMakeRotation(CGFloat(M_PI_2), 0.0, 0.0, 1.0))
-        
-        animation.duration = 0.25
-        animation.isCumulative = true
-        animation.repeatCount = Float.greatestFiniteMagnitude
-        
-        return animation
-    }
 }
 
 extension SystemsViewController: DZNEmptyDataSetDelegate {
@@ -151,7 +138,4 @@ extension SystemsViewController: DZNEmptyDataSetDelegate {
         return true
     }
     
-    func emptyDataSetShouldAnimateImageView(_ scrollView: UIScrollView!) -> Bool {
-        return true
-    }
 }

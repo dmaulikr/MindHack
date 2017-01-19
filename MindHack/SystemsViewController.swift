@@ -22,6 +22,12 @@ class SystemsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+    
+            
+            
+        print(UIFont.fontNames(forFamilyName: "Open Sans"))
+        
+
         setupTableView()
 
     }
@@ -102,7 +108,7 @@ extension SystemsViewController: DZNEmptyDataSetSource {
     
     func title(forEmptyDataSet scrollView: UIScrollView!) -> NSAttributedString! {
         let attributes: [String: Any] = [
-            NSFontAttributeName: UIFont(name: "HelveticaNeue", size: 18)!,
+            NSFontAttributeName: UIFont(name: "OpenSans", size: 18)!,
             NSForegroundColorAttributeName: UIColor.white
         ]
         
@@ -120,7 +126,7 @@ extension SystemsViewController: DZNEmptyDataSetSource {
         paragraph.alignment = .center
         
         let attributes: [String: Any] = [
-            NSFontAttributeName: UIFont(name: "HelveticaNeue", size: 14)!,
+            NSFontAttributeName: UIFont(name: "OpenSans", size: 14)!,
             NSForegroundColorAttributeName: UIColor.lightGrayBorder(),
             NSParagraphStyleAttributeName: paragraph
         ]

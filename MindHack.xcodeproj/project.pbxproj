@@ -18,6 +18,17 @@
 		A27959F91E2B1CDC003CD981 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A27959F81E2B1CDC003CD981 /* Assets.xcassets */; };
 		A27959FC1E2B1CDC003CD981 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A27959FA1E2B1CDC003CD981 /* LaunchScreen.storyboard */; };
 		A2795A041E2B1DAB003CD981 /* DisplaySystemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2795A031E2B1DAB003CD981 /* DisplaySystemViewController.swift */; };
+		A2A674591E305FDC00FAD46D /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A2A6744F1E305F9200FAD46D /* OpenSans-Bold.ttf */; };
+		A2A6745A1E305FDC00FAD46D /* OpenSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A2A674501E305F9200FAD46D /* OpenSans-BoldItalic.ttf */; };
+		A2A6745B1E305FDC00FAD46D /* OpenSans-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A2A674511E305F9200FAD46D /* OpenSans-ExtraBold.ttf */; };
+		A2A6745C1E305FDC00FAD46D /* OpenSans-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A2A674521E305F9200FAD46D /* OpenSans-ExtraBoldItalic.ttf */; };
+		A2A6745D1E305FDC00FAD46D /* OpenSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A2A674531E305F9200FAD46D /* OpenSans-Italic.ttf */; };
+		A2A6745E1E305FDC00FAD46D /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A2A674541E305F9200FAD46D /* OpenSans-Light.ttf */; };
+		A2A6745F1E305FDC00FAD46D /* OpenSans-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A2A674551E305F9200FAD46D /* OpenSans-LightItalic.ttf */; };
+		A2A674601E305FDC00FAD46D /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A2A674561E305F9200FAD46D /* OpenSans-Regular.ttf */; };
+		A2A674611E305FDC00FAD46D /* OpenSans-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A2A674571E305F9200FAD46D /* OpenSans-Semibold.ttf */; };
+		A2A674621E305FDC00FAD46D /* OpenSans-SemiboldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A2A674581E305F9200FAD46D /* OpenSans-SemiboldItalic.ttf */; };
+		A2A674641E30660400FAD46D /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A674631E30660400FAD46D /* NavigationViewController.swift */; };
 		ECAAA7C93EFFE0DB8E7CC58D /* Pods_MindHack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 415C4A439FEA6F645ED0A8E9 /* Pods_MindHack.framework */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +51,17 @@
 		A2795A031E2B1DAB003CD981 /* DisplaySystemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplaySystemViewController.swift; sourceTree = "<group>"; };
 		A2A6744A1E3041E100FAD46D /* Pods-MindHack.debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "Pods-MindHack.debug.xcconfig"; path = "MindHack/Pods-MindHack.debug.xcconfig"; sourceTree = "<group>"; };
 		A2A6744B1E3041E100FAD46D /* Pods-MindHack.release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "Pods-MindHack.release.xcconfig"; path = "MindHack/Pods-MindHack.release.xcconfig"; sourceTree = "<group>"; };
+		A2A6744F1E305F9200FAD46D /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
+		A2A674501E305F9200FAD46D /* OpenSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-BoldItalic.ttf"; sourceTree = "<group>"; };
+		A2A674511E305F9200FAD46D /* OpenSans-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-ExtraBold.ttf"; sourceTree = "<group>"; };
+		A2A674521E305F9200FAD46D /* OpenSans-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		A2A674531E305F9200FAD46D /* OpenSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Italic.ttf"; sourceTree = "<group>"; };
+		A2A674541E305F9200FAD46D /* OpenSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Light.ttf"; sourceTree = "<group>"; };
+		A2A674551E305F9200FAD46D /* OpenSans-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-LightItalic.ttf"; sourceTree = "<group>"; };
+		A2A674561E305F9200FAD46D /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
+		A2A674571E305F9200FAD46D /* OpenSans-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Semibold.ttf"; sourceTree = "<group>"; };
+		A2A674581E305F9200FAD46D /* OpenSans-SemiboldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiboldItalic.ttf"; sourceTree = "<group>"; };
+		A2A674631E30660400FAD46D /* NavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +100,7 @@
 			children = (
 				A209424C1E2B30C30089F98C /* SystemsViewController.swift */,
 				A2795A031E2B1DAB003CD981 /* DisplaySystemViewController.swift */,
+				A2A674631E30660400FAD46D /* NavigationViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -102,6 +125,7 @@
 		A263204B1E2C664400485FB5 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				A2A6744E1E305F8A00FAD46D /* Fonts */,
 				A263204C1E2C665500485FB5 /* UIColor Extension.swift */,
 			);
 			name = Extensions;
@@ -140,6 +164,23 @@
 				A27959F51E2B1CDC003CD981 /* MindHack.xcdatamodeld */,
 			);
 			path = MindHack;
+			sourceTree = "<group>";
+		};
+		A2A6744E1E305F8A00FAD46D /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				A2A6744F1E305F9200FAD46D /* OpenSans-Bold.ttf */,
+				A2A674501E305F9200FAD46D /* OpenSans-BoldItalic.ttf */,
+				A2A674511E305F9200FAD46D /* OpenSans-ExtraBold.ttf */,
+				A2A674521E305F9200FAD46D /* OpenSans-ExtraBoldItalic.ttf */,
+				A2A674531E305F9200FAD46D /* OpenSans-Italic.ttf */,
+				A2A674541E305F9200FAD46D /* OpenSans-Light.ttf */,
+				A2A674551E305F9200FAD46D /* OpenSans-LightItalic.ttf */,
+				A2A674561E305F9200FAD46D /* OpenSans-Regular.ttf */,
+				A2A674571E305F9200FAD46D /* OpenSans-Semibold.ttf */,
+				A2A674581E305F9200FAD46D /* OpenSans-SemiboldItalic.ttf */,
+			);
+			name = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,10 +247,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2A6745D1E305FDC00FAD46D /* OpenSans-Italic.ttf in Resources */,
+				A2A6745A1E305FDC00FAD46D /* OpenSans-BoldItalic.ttf in Resources */,
 				A263204A1E2C5C2700485FB5 /* SystemsTableViewCell.xib in Resources */,
+				A2A674611E305FDC00FAD46D /* OpenSans-Semibold.ttf in Resources */,
+				A2A6745B1E305FDC00FAD46D /* OpenSans-ExtraBold.ttf in Resources */,
 				A27959FC1E2B1CDC003CD981 /* LaunchScreen.storyboard in Resources */,
+				A2A6745F1E305FDC00FAD46D /* OpenSans-LightItalic.ttf in Resources */,
 				A27959F91E2B1CDC003CD981 /* Assets.xcassets in Resources */,
+				A2A674591E305FDC00FAD46D /* OpenSans-Bold.ttf in Resources */,
 				A27959F41E2B1CDC003CD981 /* Main.storyboard in Resources */,
+				A2A674621E305FDC00FAD46D /* OpenSans-SemiboldItalic.ttf in Resources */,
+				A2A6745E1E305FDC00FAD46D /* OpenSans-Light.ttf in Resources */,
+				A2A674601E305FDC00FAD46D /* OpenSans-Regular.ttf in Resources */,
+				A2A6745C1E305FDC00FAD46D /* OpenSans-ExtraBoldItalic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,6 +319,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2A674641E30660400FAD46D /* NavigationViewController.swift in Sources */,
 				A26320491E2C5C2700485FB5 /* SystemsTableViewCell.swift in Sources */,
 				A20942511E2B44E40089F98C /* CoreDataHelper.swift in Sources */,
 				A263204D1E2C665500485FB5 /* UIColor Extension.swift in Sources */,

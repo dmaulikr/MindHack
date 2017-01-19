@@ -55,14 +55,19 @@ class DisplaySystemViewController: UIViewController {
     
     func alertUserOfError(title: String, subTitle: String) {
         let appearance = SCLAlertView.SCLAppearance(
-            kTitleFont: UIFont(name: "HelveticaNeue", size: 20)!,
-            kTextFont: UIFont(name: "HelveticaNeue", size: 14)!,
-            kButtonFont: UIFont(name: "HelveticaNeue-Bold", size: 14)!,
-            showCloseButton: true
+            kTitleFont: UIFont(name: "OpenSans", size: 20)!,
+            kTextFont: UIFont(name: "OpenSans", size: 14)!,
+            kButtonFont: UIFont(name: "OpenSans-Semibold", size: 14)!,
+            showCloseButton: true,
+            contentViewColor: UIColor.white
+            
         )
         
         let alertView = SCLAlertView(appearance: appearance)
-        alertView.showError(title, subTitle: subTitle)
+        let alertViewAnimationStyle = SCLAnimationStyle.noAnimation
+        let alertViewIcon = UIImage(named: "EmptyDataLogo")
+        
+        alertView.showInfo(title, subTitle: subTitle, closeButtonTitle: "Done", duration: 0, colorStyle: 0x2C40B0, circleIconImage: alertViewIcon, animationStyle: alertViewAnimationStyle)
     }
     
     

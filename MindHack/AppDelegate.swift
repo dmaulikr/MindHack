@@ -20,7 +20,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UINavigationBar.appearance().barTintColor = UIColor.mindHackBlue()
         UINavigationBar.appearance().tintColor = .white
         
-        UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
+        UINavigationBar.appearance().titleTextAttributes = [
+            NSForegroundColorAttributeName: UIColor.white,
+            NSFontAttributeName: UIFont(name: "OpenSans-SemiBold", size: 18)!
+        ]
+        
+
         // Override point for customization after application launch.
         return true
     }

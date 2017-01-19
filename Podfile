@@ -6,6 +6,7 @@ target 'MindHack' do
   use_frameworks!
   pod 'SCLAlertView'
   pod 'DZNEmptyDataSet'
+  pod 'SkyFloatingLabelTextField'
 
   # Pods for MindHack
 

@@ -1,15 +1,18 @@
 PODS:
   - DZNEmptyDataSet (1.8.1)
   - SCLAlertView (0.7.0)
+  - SkyFloatingLabelTextField (2.0.1)
 
 DEPENDENCIES:
   - DZNEmptyDataSet
   - SCLAlertView
+  - SkyFloatingLabelTextField
 
 SPEC CHECKSUMS:
   DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
   SCLAlertView: 8a14ffc40590c619e183eed2298b854385f30be1
+  SkyFloatingLabelTextField: 070e749632ffd608d6fd9db3fa488a822524997c
 
-PODFILE CHECKSUM: f82013a9bd686d50b99998ad8d1d540122946ed4
+PODFILE CHECKSUM: 4abbe08df27d1b3187f4d1d267fac41350c0ea73
 
 COCOAPODS: 1.1.1

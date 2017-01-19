@@ -37,6 +37,7 @@ class SystemsViewController: UIViewController {
         tableView.dataSource = self
         
         tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.backgroundColor = UIColor.mindHackBlue()
         
         tableView.emptyDataSetSource = self
         tableView.emptyDataSetDelegate = self
@@ -83,6 +84,8 @@ extension SystemsViewController: UITableViewDataSource {
         
         let system = systems[indexPath.row]
         
+        
+        cell.backgroundColor = .clear
         cell.triggerLabel?.text = system.trigger ?? "Couldn't find Trigger"
         cell.routineLabel?.text = system.routine ?? "Couldn't find Routine"
         

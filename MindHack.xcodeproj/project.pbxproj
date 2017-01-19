@@ -38,7 +38,6 @@
 		A27959FB1E2B1CDC003CD981 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A27959FD1E2B1CDC003CD981 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A2795A031E2B1DAB003CD981 /* DisplaySystemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplaySystemViewController.swift; sourceTree = "<group>"; };
-		A2A674471E30386100FAD46D /* MindHack-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MindHack-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		A2A6744A1E3041E100FAD46D /* Pods-MindHack.debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "Pods-MindHack.debug.xcconfig"; path = "MindHack/Pods-MindHack.debug.xcconfig"; sourceTree = "<group>"; };
 		A2A6744B1E3041E100FAD46D /* Pods-MindHack.release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "Pods-MindHack.release.xcconfig"; path = "MindHack/Pods-MindHack.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -134,7 +133,6 @@
 				A209424F1E2B44D70089F98C /* Plugins */,
 				A263204B1E2C664400485FB5 /* Extensions */,
 				A27959EE1E2B1CDC003CD981 /* AppDelegate.swift */,
-				A2A674471E30386100FAD46D /* MindHack-Bridging-Header.h */,
 				A27959F21E2B1CDC003CD981 /* Main.storyboard */,
 				A27959F81E2B1CDC003CD981 /* Assets.xcassets */,
 				A27959FA1E2B1CDC003CD981 /* LaunchScreen.storyboard */,

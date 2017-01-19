@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreData
+import DZNEmptyDataSet
 
 
 class SystemsViewController: UIViewController {
@@ -37,7 +38,9 @@ class SystemsViewController: UIViewController {
         tableView.dataSource = self
         
         tableView.rowHeight = UITableViewAutomaticDimension
-//        tableView.estimatedRowHeight = 140
+        
+        tableView.emptyDataSetSource = self
+        tableView.emptyDataSetDelegate = self
     }
 
 }
@@ -88,4 +91,67 @@ extension SystemsViewController: UITableViewDataSource {
         return cell
     }
     
+}
+
+extension SystemsViewController: DZNEmptyDataSetSource {
+    func image(forEmptyDataSet scrollView: UIScrollView!) -> UIImage! {
+        return UIImage(named: "EmptyDataLogo")
+    }
+    
+    func title(forEmptyDataSet scrollView: UIScrollView!) -> NSAttributedString! {
+        let attributes: [String: Any] = [
+            NSFontAttributeName: UIFont(name: "HelveticaNeue", size: 18)!,
+            NSForegroundColorAttributeName: UIColor.white
+        ]
+        
+        let titleText = "This is your Dashboard."
+        
+        let title = NSAttributedString(string: titleText, attributes: attributes)
+        return title
+    }
+    
+    func description(forEmptyDataSet scrollView: UIScrollView!) -> NSAttributedString! {
+        let descriptionText = "When you add a system, it will show up here!"
+        
+        let paragraph = NSMutableParagraphStyle()
+        paragraph.lineBreakMode = .byWordWrapping
+        paragraph.alignment = .center
+        
+        let attributes: [String: Any] = [
+            NSFontAttributeName: UIFont(name: "HelveticaNeue", size: 14)!,
+            NSForegroundColorAttributeName: UIColor.lightGray,
+            NSParagraphStyleAttributeName: paragraph
+        ]
+        
+        let description = NSAttributedString(string: descriptionText, attributes: attributes)
+        
+        return description
+    }
+    
+    func backgroundColor(forEmptyDataSet scrollView: UIScrollView!) -> UIColor! {
+        return UIColor.mindHackBlue()
+    }
+    
+    func imageAnimation(forEmptyDataSet scrollView: UIScrollView!) -> CAAnimation! {
+        let animation = CABasicAnimation(keyPath: "transform")
+        animation.fromValue = NSValue(caTransform3D: CATransform3DIdentity)
+        
+        animation.toValue = NSValue(caTransform3D: CATransform3DMakeRotation(CGFloat(M_PI_2), 0.0, 0.0, 1.0))
+        
+        animation.duration = 0.25
+        animation.isCumulative = true
+        animation.repeatCount = Float.greatestFiniteMagnitude
+        
+        return animation
+    }
+}
+
+extension SystemsViewController: DZNEmptyDataSetDelegate {
+    func emptyDataSetShouldDisplay(_ scrollView: UIScrollView!) -> Bool {
+        return true
+    }
+    
+    func emptyDataSetShouldAnimateImageView(_ scrollView: UIScrollView!) -> Bool {
+        return true
+    }
 }

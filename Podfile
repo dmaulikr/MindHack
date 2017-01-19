@@ -5,8 +5,8 @@ target 'MindHack' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
   pod 'SCLAlertView'
-  pod "TextFieldEffects"
-
+  pod 'TextFieldEffects'
+  pod 'DZNEmptyDataSet'
 
   # Pods for MindHack
 

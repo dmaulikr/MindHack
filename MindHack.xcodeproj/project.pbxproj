@@ -29,6 +29,7 @@
 		A2A674611E305FDC00FAD46D /* OpenSans-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A2A674571E305F9200FAD46D /* OpenSans-Semibold.ttf */; };
 		A2A674621E305FDC00FAD46D /* OpenSans-SemiboldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A2A674581E305F9200FAD46D /* OpenSans-SemiboldItalic.ttf */; };
 		A2A674641E30660400FAD46D /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A674631E30660400FAD46D /* NavigationViewController.swift */; };
+		A2A674661E31CA2F00FAD46D /* Global Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A674651E31CA2F00FAD46D /* Global Functions.swift */; };
 		ECAAA7C93EFFE0DB8E7CC58D /* Pods_MindHack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 415C4A439FEA6F645ED0A8E9 /* Pods_MindHack.framework */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +63,7 @@
 		A2A674571E305F9200FAD46D /* OpenSans-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Semibold.ttf"; sourceTree = "<group>"; };
 		A2A674581E305F9200FAD46D /* OpenSans-SemiboldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiboldItalic.ttf"; sourceTree = "<group>"; };
 		A2A674631E30660400FAD46D /* NavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
+		A2A674651E31CA2F00FAD46D /* Global Functions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Global Functions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +129,7 @@
 			children = (
 				A2A6744E1E305F8A00FAD46D /* Fonts */,
 				A263204C1E2C665500485FB5 /* UIColor Extension.swift */,
+				A2A674651E31CA2F00FAD46D /* Global Functions.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -326,6 +329,7 @@
 				A2795A041E2B1DAB003CD981 /* DisplaySystemViewController.swift in Sources */,
 				A209424D1E2B30C30089F98C /* SystemsViewController.swift in Sources */,
 				A27959F71E2B1CDC003CD981 /* MindHack.xcdatamodeld in Sources */,
+				A2A674661E31CA2F00FAD46D /* Global Functions.swift in Sources */,
 				A27959EF1E2B1CDC003CD981 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

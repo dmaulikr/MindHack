@@ -22,12 +22,7 @@ class SystemsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    
-            
-            
-        print(UIFont.fontNames(forFamilyName: "Open Sans"))
         
-
         setupTableView()
 
     }
@@ -37,6 +32,7 @@ class SystemsViewController: UIViewController {
         systems = CoreDataHelper.fetchSystems()
         tableView.reloadData()
     }
+    
     
     func setupTableView() {
         tableView.delegate = self
@@ -107,8 +103,16 @@ extension SystemsViewController: DZNEmptyDataSetSource {
     }
     
     func title(forEmptyDataSet scrollView: UIScrollView!) -> NSAttributedString! {
+        var titleFont: String?
+        
+        if doesOpenSansExist() {
+            titleFont = "OpenSans"
+        } else {
+            titleFont = "HelveticaNeue"
+        }
+        
         let attributes: [String: Any] = [
-            NSFontAttributeName: UIFont(name: "OpenSans", size: 18)!,
+            NSFontAttributeName: UIFont(name: titleFont ?? "HelveticaNeue", size: 18)!,
             NSForegroundColorAttributeName: UIColor.white
         ]
         
@@ -125,8 +129,16 @@ extension SystemsViewController: DZNEmptyDataSetSource {
         paragraph.lineBreakMode = .byWordWrapping
         paragraph.alignment = .center
         
+        var descriptionFont: String?
+        
+        if doesOpenSansExist() {
+            descriptionFont = "OpenSans"
+        } else {
+            descriptionFont = "HelveticaNeue"
+        }
+        
         let attributes: [String: Any] = [
-            NSFontAttributeName: UIFont(name: "OpenSans", size: 14)!,
+            NSFontAttributeName: UIFont(name: descriptionFont ?? "HelveticaNeue", size: 14)!,
             NSForegroundColorAttributeName: UIColor.lightGrayBorder(),
             NSParagraphStyleAttributeName: paragraph
         ]

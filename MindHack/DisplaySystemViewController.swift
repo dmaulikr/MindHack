@@ -22,6 +22,33 @@ class DisplaySystemViewController: UIViewController {
         super.viewDidLoad()
         
         setupTextFields()
+        setupLogoImageView()
+        
+    }
+    
+    let logoImage: UIImageView = {
+        let image = UIImage(named: "EmptyDataLogo")
+        let imageView = UIImageView()
+        imageView.image = image
+        imageView.frame = CGRect(x: 0, y: 0, width: (image?.size.width)!, height: (image?.size.height)!)
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        return imageView
+    }()
+    
+    func setupLogoImageView() {
+        view.addSubview(logoImage)
+        
+        logoImage.bottomAnchor.constraint(equalTo: (triggerTextField?.topAnchor)!, constant: -20).isActive = true
+        logoImage.centerXAnchor.constraint(equalTo: self.view.centerXAnchor, constant: 0).isActive = true
+    }
+    
+    func setupKeyboardObservers() {
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(DisplaySystemViewController.keyboardWillShow(_:)),
+                                               name: NSNotification.Name.UIKeyboardWillShow, object: nil)
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(DisplaySystemViewController.keyboardWillHide(_:)),
+                                               name: NSNotification.Name.UIKeyboardWillHide, object: nil)
     }
     
     func setupTextFields() {
@@ -126,6 +153,22 @@ class DisplaySystemViewController: UIViewController {
         let alertViewIcon = UIImage(named: "EmptyDataLogo")
         
         alertView.showInfo(title, subTitle: subTitle, closeButtonTitle: "Done", duration: 0, colorStyle: 0x2C40B0, circleIconImage: alertViewIcon, animationStyle: alertViewAnimationStyle)
+    }
+    
+    func keyboardWillShow(_ notification: Notification) {
+        
+        if let keyboardSize = ((notification as NSNotification).userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
+            if view.frame.origin.y == 0{
+                self.view.frame.origin.y -= (keyboardSize.height)
+            }
+        }
+        
+    }
+    
+    func keyboardWillHide(_ notification: Notification) {
+        if view.frame.origin.y != 0 {
+            self.view.frame.origin.y = 0
+        }
     }
     
     

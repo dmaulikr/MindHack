@@ -9,6 +9,11 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans</string>
+        </array>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -20,34 +25,37 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="routineLabel" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ODr-yX-xiP">
-                        <rect key="frame" x="178" y="11.5" width="134" height="21"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
+                        <rect key="frame" x="178.5" y="10.5" width="133.5" height="23.5"/>
+                        <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="17"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="triggerLabel" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YeL-Ij-TmA">
-                        <rect key="frame" x="8" y="11.5" width="134" height="20.5"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
+                        <rect key="frame" x="8" y="10.5" width="133.5" height="23.5"/>
+                        <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="17"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Arrow" translatesAutoresizingMaskIntoConstraints="NO" id="rVr-PA-7gm">
-                        <rect key="frame" x="150" y="16.5" width="20" height="10"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-&gt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NIB-OR-leg">
+                        <rect key="frame" x="149.5" y="12" width="21" height="21"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="10" id="acO-NS-TP6"/>
-                            <constraint firstAttribute="width" constant="20" id="jJq-qC-5qF"/>
+                            <constraint firstAttribute="height" constant="21" id="PjS-l9-yF7"/>
+                            <constraint firstAttribute="width" constant="21" id="SQy-9Q-8eF"/>
                         </constraints>
-                    </imageView>
+                        <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="rVr-PA-7gm" firstAttribute="leading" secondItem="YeL-Ij-TmA" secondAttribute="trailing" constant="8" id="MpH-I5-QwB"/>
+                    <constraint firstItem="ODr-yX-xiP" firstAttribute="leading" secondItem="NIB-OR-leg" secondAttribute="trailing" constant="8" id="8zU-gf-hEC"/>
                     <constraint firstItem="YeL-Ij-TmA" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="NjT-0W-8Fs"/>
+                    <constraint firstItem="NIB-OR-leg" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="VLs-zO-wBR"/>
                     <constraint firstItem="YeL-Ij-TmA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="bPn-fz-c0S"/>
+                    <constraint firstItem="NIB-OR-leg" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="d5o-qn-Uvu"/>
                     <constraint firstItem="ODr-yX-xiP" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="hPZ-3I-QVM"/>
-                    <constraint firstItem="ODr-yX-xiP" firstAttribute="leading" secondItem="rVr-PA-7gm" secondAttribute="trailing" constant="8" id="jSA-OM-vf4"/>
+                    <constraint firstItem="NIB-OR-leg" firstAttribute="leading" secondItem="YeL-Ij-TmA" secondAttribute="trailing" constant="8" id="nzq-7X-b3T"/>
                     <constraint firstAttribute="trailingMargin" secondItem="ODr-yX-xiP" secondAttribute="trailing" id="uHR-zE-rR3"/>
-                    <constraint firstItem="rVr-PA-7gm" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="xdE-Fj-ckt"/>
-                    <constraint firstItem="rVr-PA-7gm" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="xme-nf-s29"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
@@ -57,7 +65,4 @@
             <point key="canvasLocation" x="34" y="-142"/>
         </tableViewCell>
     </objects>
-    <resources>
-        <image name="Arrow" width="42" height="21"/>
-    </resources>
 </document>
